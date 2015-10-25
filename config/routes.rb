@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
 
-	ressources: application_controller
+	resources :application_controller
 	root 'application_controller#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
