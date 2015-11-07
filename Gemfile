@@ -10,6 +10,7 @@ end
 
 group :development, :test do
   gem "sqlite3-ruby", "~> 1.3.0", :require => "sqlite3"
+  gem 'growl', '1.0.3'
 end
 
 group :development do
@@ -18,7 +19,6 @@ end
 
 group :test do
   gem 'rspec', '3.3.0'
-  gem 'webrat', '0.7.3'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -38,6 +38,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
+gem 'capybara', '2.5.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
