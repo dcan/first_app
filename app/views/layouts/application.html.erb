@@ -3,8 +3,33 @@
   <head>
     <title>Simple App du Tutoriel Ruby on Rails | <%= @titre %></title>
     <%= csrf_meta_tag %>
+    <%= stylesheet_link_tag "bootstrap" %>
+    <%= stylesheet_link_tag "style" %>
   </head>
   <body>
-    <%= yield %>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="container">
+    		<div class="navbar-header">
+    			<%= link_to "Home", home_path, class: "navbar-brand" %>
+    		</div>
+
+    		<ul class="nav navbar-nav">
+    			<li class="<%= 'active' if current_page?(home_path) %>"><%= link_to "Accueil", home_path %></li>
+    			<li class="<%= 'active' if current_page?(help_path) %>"><%= link_to "Aide", help_path %></li>
+    			<li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to "Contact", contact_path %></li>
+    			<li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "A propos", about_path %></li>
+    			<li class="<%= 'active' if current_page?(sign_up_path) %>"><%= link_to "Inscriptions", sign_up_path %></li>
+    		</ul>
+  		</div>
+	</nav>
+
+
+
+  	<div class="container navbar-espace">
+		<div class="page-header">
+    		<%= yield %>
+    	</div>
+	</div>
   </body>
 </html>

@@ -18,7 +18,7 @@ describe PagesController do
     end
   end
 
-  describe "GEt 'help'" do
+  describe "GET 'help'" do
   	it "devrait réussir" do
   	 get 'help'
   	 response.should be_success

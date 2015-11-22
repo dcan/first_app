@@ -14,4 +14,9 @@ class PagesController < ApplicationController
   def help
   	@titre = "Aide"
   end
+
+  def signup
+  	@titre = "Inscription"
+  end
+
 end
