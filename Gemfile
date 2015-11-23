@@ -15,6 +15,7 @@ end
 
 group :development do
   gem 'rspec-rails', '3.3.3'
+  gem 'tomkersten-annotate-models', '~> 1.0', '>= 1.0.4'
 end
 
 group :test do
@@ -29,6 +30,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'coffee-script-source', '1.8.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
+gem 'protected_attributes', '~> 1.1', '>= 1.1.3'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
